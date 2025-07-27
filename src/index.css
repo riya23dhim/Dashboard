@@ -1,0 +1,347 @@
+@import 'tailwindcss';
+
+
+
+
+@layer theme, base, components, utilities;
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+@theme {
+    --font-display: "Open Sans", sans-serif;
+    --text-14:14px;
+    --color-dark-hover:rgba(255, 255, 255, 0.08);
+    --color-main-bg: #FAFBFB;
+    --color-main-dark-bg: #20232A;
+    --color-secondary-dark-bg: #33373E;
+    --color-light-gray: #F7F7F7;
+    --color-half-transparent: rgba(0, 0, 0, 0.5);
+    --color-border: rgba(0, 0, 0, 0.1);
+    --width-border-1:1px;
+    --width-400: 400px;
+    --height-80: 80px;
+    --width-400: 400px;
+  --width-760: 760px;
+  --width-780: 780px;
+  --width-800: 800px;
+  --width-1000: 1000px;
+  --width-1200: 1200px;
+  --width-1400: 1400px;
+  --min-height-590:590px;
+  --color-second-color:#b9b9b9;
+  --color-primary-color:#d9d9d9;
+  --color-black-color:#020101;
+  --color-shadow-color:rgba(0,0,0,0.2);
+  
+
+  
+  
+  
+  }
+  :root {
+    --grid-search:#81007f;
+    --grid-header-bg:  #182843 ;
+    --grid-header-text:  #bebfc3;
+    --grid-new:#8b2888fb
+  }
+  .e-grid .e-headercell{
+  background-color:var(--grid-header-bg)!important;
+}
+.e-headertext{
+  color:var(--grid-header-text);
+  font-size: 13px;
+  font-weight: 600;
+}
+.e-grid.e-headertext:active{
+  color:white !important;
+}
+.e-grid th.e-headercell[aria-sort='ascending'] .e-headertext, .e-grid th.e-headercell[aria-sort='descending'] .e-headertext, .e-grid th.e-headercell[aria-sort='ascending'] .e-sortfilterdiv, .e-grid th.e-headercell[aria-sort='descending'] .e-sortfilterdiv {color:rgb(235, 237, 241) !important;opacity: 0.8 ;}
+.e-grid .e-focused:not(.e-menu-item){
+  box-shadow: none !important;
+}
+.e-toolbar .e-toolbar-items.e-tbar-pos{
+  background-color: rgba(250, 250, 250, 0.606) !important;
+  height:50px !important;
+
+
+}
+.e-grid .e-toolbar .e-input-group::after {
+  border-bottom: 2px solid gray ;
+
+}
+.e-grid .e-toolbar .e-input-group::before {
+  border-bottom: 2px solid gray;
+
+}
+.e-grid .e-toolbar-items .e-toolbar-item.e-search-wrapper .e-search .e-search-icon{
+  padding: 10px;
+  background-color:#03C9D7 !important ;
+  border-radius: 50%;
+  color:white !important
+}
+.e-pager .e-currentitem, .e-pager .e-currentitem{
+  background-color: #03C9D7 !important;
+}
+.e-checkbox-wrapper .e-frame.e-check, .e-css.e-checkbox-wrapper .e-frame.e-check {
+  background-color: #03C9D7 !important;
+}
+/* .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn.e-tbtn-txt .e-icons.e-btn-icon {
+  color: red !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  
+} */
+/* .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text{
+  width:0 !important;
+  font-size: 0px !important;
+  height:  0 !important;
+}
+
+.e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn {
+   height: 37px !important;
+   width:37px !important;
+  border-radius: 5px;
+  padding-left:5px !important;
+
+  background-color: #ffeeeee5!important;
+  opacity: 0.9 !important;
+  border:1.5px solid red
+  
+
+} */
+ /* //for err page */
+.e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn:hover {
+  background-color: #ffeeee1e!important;
+}
+
+  .err-pages{
+    padding-top:3rem;
+    padding-bottom:5rem;
+    width:100vw;
+    height:100vh;
+margin-top: 100px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:white;
+}
+.err-page-imgs{
+    width:90%;
+    height:60%;
+    margin-left: 200px;
+    display: flex;
+}
+.err-page-txt-images{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.err-page-txts{
+    width:100%;
+    height:45%;
+    background-color:white;
+    display:flex;
+    margin-top: -30px;
+    margin-left: 300px;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    
+}
+.err-page-txt-uppers{
+    height:15%;
+    font-size:5rem;
+}
+.err-page-txt-h1s{
+    font-size:2.5rem;
+}
+.err-page-txt-ps{
+    font-size:1.1rem;
+
+}
+.err-page-txt-btns{
+    background-color:rgb(52, 182, 52);
+    height:40px;
+    width:140px;color:white;
+    font-size:1rem;
+    padding-left:20px;
+    padding-top:9px;
+    border-radius:5px;
+   
+}
+.err-page-txt-btns:hover{
+  transform: scale(1.06);
+  box-shadow: 0px 0px 10px 5px rgba(47, 255, 113, 0.198);
+  background-color:rgba(52, 182, 52, 0.789);
+  
+  
+}
+  
+.err-page{
+  padding-top:3rem;
+  padding-bottom:5rem;
+  width:100vw;
+  height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background-color:white;
+}
+.err-page-img{
+  width:40%;
+  height:100%;
+}
+.err-page-txt-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.err-page-txt{
+  width:100%;
+  height:45%;
+  background-color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  
+}
+.err-page-txt-upper{
+  height:15%;
+  font-size:5rem;
+}
+.err-page-txt-h1{
+  font-size:2.5rem;
+}
+.err-page-txt-p{
+  font-size:1.1rem;
+
+}
+.err-page-txt-btn{
+  background-color:rgb(52, 182, 52);
+  height:40px;
+  width:140px;color:white;
+  font-size:1rem;
+  padding-left:20px;
+  padding-top:9px;
+  border-radius:2px;
+}
+
+/* kanban was going sooo low */
+.e-kanban-border {
+height:20px !important;
+max-height:500px !important
+
+}
+#preview {
+  background: transparent
+    url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png')
+    no-repeat;
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+}
+.e-schedule .e-vertical-view .e-day-wrapper .e-appointment {
+
+  background-color:var(--grid-search) !important;
+  filter: brightness(1.2) saturate1(1) !important;
+  opacity: 0.95 !important;
+}
+.e-popup-header{
+  background-color:var(--grid-search) !important;
+  filter: brightness(1) saturate(0.5) !important;
+  opacity: 0.9 !important;
+}
+.e-new-event{
+  background-color:var(--grid-search) !important;
+}
+@keyframes spin-once {
+  from { transform: rotate(0deg);   }
+  to   { transform: rotate(360deg); }
+}
+.spin-once:hover { animation: spin-once 2s linear ; }
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  25% {
+    transform: rotate(-15deg) translateY(3px);
+  }
+  75% {
+    transform: rotate(15deg) translateY(-3px);
+  }
+}
+.thinking::before{
+  content:" ";
+  position: absolute;
+top:-50px;
+  right:0px;
+  opacity:0;
+  height:50px ;
+  width:50px;
+visibility: hidden;
+  /* background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg fill='%23000000' width='800px' height='800px' viewBox='0 0 2.33333 2.33333' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:black%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Layer_x0020_1'%3E%3Cpath class='fil0' d='M1.23193 1.80336c-0.0916535,0 -0.166642,-0.0735945 -0.166642,-0.165248 0,-0.0916496 0.0749882,-0.165252 0.166642,-0.165252 0.0916496,0 0.165248,0.0749882 0.165248,0.165252 0,0.0902638 -0.0749882,0.165248 -0.165248,0.165248zm0 -0.291618c-0.069437,0 -0.12637,0.056937 -0.12637,0.12637 0,0.0694331 0.056937,0.124976 0.12637,0.124976 0.0694331,0 0.126366,-0.0555433 0.126366,-0.124976 -0.00138976,-0.0694331 -0.0569331,-0.12637 -0.126366,-0.12637z'/%3E%3Cpath class='fil0' d='M1.01808 2.02c-0.0597126,0 -0.109709,-0.0499882 -0.109709,-0.109705 0,-0.0611024 0.0499921,-0.109705 0.109709,-0.109705 0.0597126,0 0.109705,0.0499882 0.109705,0.109705 0,0.0597165 -0.0499921,0.109705 -0.109705,0.109705zm0 -0.180524c-0.0388858,0 -0.069437,0.031937 -0.069437,0.0694331 0,0.0374921 0.0319409,0.0694331 0.069437,0.0694331 0.0388819,0 0.0694331,-0.031937 0.0694331,-0.0694331 0,-0.0388819 -0.0305512,-0.0694331 -0.0694331,-0.0694331z'/%3E%3Cpath class='fil0' d='M0.970862 1.45065c-0.141646,0 -0.256902,-0.115256 -0.256902,-0.256902 0,-0.0124961 0.00138976,-0.0249961 0.00277559,-0.0374921 -0.115256,-0.0263858 -0.197189,-0.129146 -0.197189,-0.249961 0,-0.136087 0.106925,-0.248571 0.241626,-0.256902 -0.0695512,-0.153028 0.0393661,-0.336059 0.215244,-0.336059 0.0958189,0 0.180524,0.056937 0.21802,0.141646 0.0472165,-0.0735984 0.129146,-0.120815 0.218024,-0.120815 0.166693,0 0.290445,0.156059 0.248571,0.323559 0.0916496,0.0416575 0.152752,0.133307 0.152752,0.234685 0,0.115256 -0.0749882,0.21524 -0.186079,0.247181 0,0.244189 -0.280831,0.345453 -0.437429,0.188854 -0.0472205,0.0749882 -0.12915,0.122205 -0.219413,0.122205zm-0.195803 -0.760984c-0.119421,0 -0.21663,0.0972047 -0.21663,0.21663 0,0.108315 0.0777638,0.198583 0.183303,0.213854 0.0118228,0.00232677 0.0196024,0.0123583 0.0166614,0.0236063 -0.00416535,0.0152795 -0.00555512,0.0319409 -0.00555512,0.0486024 0,0.119425 0.0972047,0.216634 0.216634,0.216634 0.0847087,0 0.161083,-0.0499882 0.197189,-0.126366 0.00594094,-0.0136299 0.0244252,-0.0155827 0.0333268,-0.00416929 0.0416614,0.0513819 0.104154,0.0819331 0.170807,0.0819331 0.119425,0 0.215244,-0.0972047 0.215244,-0.216634 0,-0.0155787 -0.00673228,-0.0364567 0.0138858,-0.0416575 0.101374,-0.0222205 0.170807,-0.109705 0.170807,-0.212465 0,-0.0902638 -0.0583228,-0.173583 -0.144417,-0.204134 -0.00972441,-0.00416535 -0.0152795,-0.0152756 -0.0125,-0.0249961 0.00833071,-0.0236063 0.0125,-0.0486024 0.0125,-0.0722087 0,-0.119425 -0.0972087,-0.216634 -0.216634,-0.216634 -0.0902638,0 -0.170807,0.056937 -0.202744,0.141646 -0.00726772,0.0204764 -0.0359291,0.0135 -0.0388858,-0.00277953 -0.0180512,-0.0916496 -0.0999843,-0.158307 -0.194413,-0.158307 -0.109705,0 -0.198579,0.088874 -0.198579,0.198579 0,0.0388819 0.0111102,0.076378 0.031937,0.108315 0.00721654,0.0103071 0.0031811,0.0319409 -0.0166654,0.0319409 -0.00416535,0 -0.00694094,0 -0.0111102,0 0.0013937,-3.93701e-006 -0.00138189,-0.00138976 -0.00416142,-0.00138976z'/%3E%3Cpath class='fil0' d='M0.861157 0.975724c-0.123012,0 -0.190327,-0.119524 -0.10276,-0.170807 0.0277756,-0.0166654 0.0680433,-0.0194409 0.105539,-0.00972047 0.103157,0.0273346 0.129449,0.125866 0.0611024,0.165252 -0.0180551,0.00972047 -0.0402717,0.0152756 -0.0638819,0.0152756zm-0.0402717 -0.147201c-0.0856811,0 -0.0810472,0.0758071 0.00694488,0.101378 0.0364567,0.0105906 0.0865315,0.00240945 0.0944291,-0.0263898 0.00694094,-0.0263819 -0.0249961,-0.0583228 -0.0694331,-0.0708189 -0.0111102,-0.00277953 -0.0222205,-0.00416929 -0.0319409,-0.00416929z'/%3E%3Cpath class='fil0' d='M1.18611 0.975724c-0.0844843,0 -0.157091,-0.0629488 -0.140256,-0.12498 0.0138858,-0.0486024 0.076378,-0.0735984 0.143031,-0.0555433 0.134283,0.0363661 0.126622,0.180524 -0.00277559,0.180524zm-0.0402717 -0.147201c-0.0852559,0 -0.081315,0.0777441 0.00694488,0.10276 0.0366614,0.0103937 0.0856378,0.00314173 0.0944291,-0.0263858 0.00694094,-0.0263819 -0.0236102,-0.0583228 -0.0680433,-0.0708189 -0.0111142,-0.00416535 -0.0222244,-0.00555512 -0.0333307,-0.00555512z'/%3E%3Cpath class='fil0' d='M1.51105 0.975724c-0.0844803,0 -0.157087,-0.0629488 -0.140252,-0.12498 0.0138858,-0.0486024 0.076378,-0.0735984 0.143031,-0.0555433 0.13428,0.0363661 0.126622,0.180524 -0.00277953,0.180524zm-0.0402717 -0.147201c-0.0852559,0 -0.081315,0.0777441 0.00694488,0.10276 0.0366614,0.0103937 0.0856378,0.00314173 0.0944291,-0.0263858 0.00694094,-0.0263819 -0.0236063,-0.0583228 -0.0680433,-0.0708189 -0.0111102,-0.00416535 -0.0222205,-0.00555512 -0.0333307,-0.00555512z'/%3E%3C/g%3E%3C/svg%3E"); */
+  background-repeat: repeat;
+  background-image: url('/robot-assistant.png');
+  background-size: cover;
+  background-position: bottom;
+  animation: think 2s infinite;
+  animation-play-state: paused;
+
+ border-radius: 50%;          /* ⬅️ makes it a circle */
+
+
+
+  
+ 
+
+}
+.thinking:has(.wiggle-once:hover)::before{
+  visibility: visible;
+  animation-play-state: running;
+  
+}
+@keyframes think{
+  0% ,100%{
+    opacity:0.5;
+  }
+  25%{
+    opacity:0.6
+
+  }
+  50%{
+    opacity:0.9
+  }
+  75%{
+    opacity:0.6
+  }
+}
+
+.wiggle-once:hover{
+  animation: wiggle 0.3s linear 0.1s infinite;
+}
+.scale-btn:hover{
+  background-color: #d6d6d670;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in;
+}
+.scale-down:hover{
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
