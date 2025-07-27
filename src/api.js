@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
 
 export const api=axios.create({
-    baseURL:  (window.location.hostname === "localhost" && "http://localhost:3000") || "https://dashboard-backend-eqc8.onrender.com",
+    baseURL:  import.meta.env.VITE_BACKEND_URL,
     headers:{"Content-Type":"application/json",
     }
 
@@ -18,7 +18,7 @@ api.interceptors.request.use((config) => {
   });
 
 export const apistart=axios.create({
-    baseURL: (window.location.hostname === "localhost" && "http://localhost:3000") || "https://dashboard-backend-eqc8.onrender.com",
+    baseURL:import.meta.env.VITE_BACKEND_URL,
     headers:{"Content-Type":"application/json"}
 
 })
