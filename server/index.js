@@ -16,8 +16,8 @@ connectDB();
 //app set 
 const app=express();
 app.use(cors({
-    origin: "https://dashboard7733.netlify.app",
-    credentials: true,
+    origin: "*",
+    credentials: true
   }));
 app.use(express.json());
 app.use(morgan("dev"));

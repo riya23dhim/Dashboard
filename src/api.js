@@ -1,9 +1,10 @@
 import axios from 'axios';
 import { useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
+const backendURL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
 
 export const api=axios.create({
-    baseURL:  import.meta.env.VITE_BACKEND_URL,
+    baseURL: backendURL,
     headers:{"Content-Type":"application/json",
     }
 
@@ -18,7 +19,7 @@ api.interceptors.request.use((config) => {
   });
 
 export const apistart=axios.create({
-    baseURL:import.meta.env.VITE_BACKEND_URL,
+    baseURL:backendURL,
     headers:{"Content-Type":"application/json"}
 
 })

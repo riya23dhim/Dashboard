@@ -17,6 +17,7 @@ import { earningData,SparklineAreaData,pieChartData, trendPair2 } from '../data/
 import { useStateContext } from '../context/ContextProvider';
 //btn comp not the main
 const NavButton=({title,customFunc,icon,dotColor,color})=>{
+
   const {currentcolor}=useStateContext();
 
   return( 
@@ -40,7 +41,9 @@ const Ecommerce = () => {
       easing: 'ease-in-out'  // whether animation should happen only once
     });
   }, []);
+  
   return (
+   
     // main div with top margin-14
     <div className=' mt-14'>
       <div className=' flex flex-wrap lg:flex-nowrap justify-center'>
