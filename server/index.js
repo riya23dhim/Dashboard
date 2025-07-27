@@ -15,7 +15,10 @@ dotenv.config();
 connectDB();
 //app set 
 const app=express();
-app.use(cors());
+app.use(cors({
+    origin: "https://dashboard7733.netlify.app",
+    credentials: true,
+  }));
 app.use(express.json());
 app.use(morgan("dev"));
 //routes main 
