@@ -4,6 +4,27 @@
 A modern and responsive Admin Dashboard built with **React 19**, **Tailwind CSS**, **Material UI**, and a robust **Node.js/Express/MongoDB** backend.  
 Includes full **JWT authentication**, **frontend/backend validation**, **skeleton loading states**, and custom **error handling** pages — ensuring seamless UI/UX and robust security.
 
+Images
+
+Register:
+<img width="1374" height="771" alt="Screenshot 2025-07-28 at 10 15 56 AM" src="https://github.com/user-attachments/assets/84ad65f6-7387-4073-b27b-dbb778041e05" />
+
+
+
+Home
+<img width="2832" height="1588" alt="image" src="https://github.com/user-attachments/assets/c59a1019-fd14-41d5-b80b-bcfa0cb1a831" />
+
+
+Dark mode
+<img width="1433" height="789" alt="Screenshot 2025-07-28 at 10 36 38 AM" src="https://github.com/user-attachments/assets/8efcd35c-8f40-4866-816d-bc04bc051d59" />
+
+
+
+Mobile responsive
+
+
+<img width="334" height="699" alt="Screenshot 2025-07-28 at 10 40 11 AM" src="https://github.com/user-attachments/assets/6c472979-0eee-4bf7-b32e-4485e0d2da1c" />
+
 ---
 
 ##  Tech Stack
@@ -29,13 +50,13 @@ Includes full **JWT authentication**, **frontend/backend validation**, **skeleto
 
 ##  Features
 
-- 🔐 **Authentication:** Login/Register with JWT stored in cookies  
-- ✅ **Validation:** Yup (frontend) + Express Validator (backend)  
-- 🔁 **Protected Routes:** via custom Express middleware  
-- 📦 **Dynamic Data Loading:** Orders, Customers, Employees  
-- 🧊 **Skeleton Loaders**: Real-time feedback during fetch  
-- 🚫 **Custom 404/500 Error Pages**  
-- 🌙 **Dark Mode** toggle via Context API  
+-  **Authentication:** Login/Register with JWT stored in cookies  
+- **Validation:** Yup (frontend) + Express Validator (backend)  
+-  **Protected Routes:** via custom Express middleware  
+-  **Dynamic Data Loading:** Orders, Customers, Employees  
+-  **Skeleton Loaders**: Real-time feedback during fetch  
+-  **Custom 404/500 Error Pages**  
+- **Dark Mode** toggle via Context API  
  
 
 ---
